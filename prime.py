@@ -1,0 +1,1 @@
+def prime(n):v=range(2,n);v=[x for x in v if x==2 or x%2!=0];v=[x for x in v if all(x%i!=0 for i in range(2,int(x**0.5)+1))];print(v)

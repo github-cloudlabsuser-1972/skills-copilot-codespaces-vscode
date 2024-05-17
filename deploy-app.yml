@@ -1,0 +1,30 @@
+name: Email Report
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+
+jobs:
+  send_report:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Send email report
+        run: |
+          # Add your code here to send the email report
+          # You can use a library like smtplib or a third-party service like SendGrid
+
+      - name: Cleanup
+        run: |
+          # Add any cleanup steps here if needed

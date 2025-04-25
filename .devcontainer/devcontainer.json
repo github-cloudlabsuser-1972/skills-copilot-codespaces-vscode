@@ -1,0 +1,16 @@
+{
+    // Name this configuration
+    "name": "Codespace for Skills!",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot",
+                "hashicorp.terraform"
+            ]
+        }
+    },
+   "features": {
+       "ghcr.io/devcontainers/features/terraform:1": {},
+       "ghcr.io/devcontainers/features/azure-cli:1": {}
+   }
+}
